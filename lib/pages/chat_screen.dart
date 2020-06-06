@@ -16,7 +16,7 @@ class _ChatScreenState extends State<ChatScreen> {
           new Divider(
             height: 10.0,
           ),
-          new ListTitle(
+          new ListTile(
             leading: new CircleAvatar(
               foregroundColor: Theme.of(context).primaryColor,
               backgroundColor: Colors.grey,

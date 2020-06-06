@@ -1,3 +1,4 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsappclone/pages/camera_screen.dart';
 import 'package:whatsappclone/pages/chat_screen.dart';
@@ -5,6 +6,9 @@ import 'package:whatsappclone/pages/foro_screen.dart';
 import 'package:whatsappclone/pages/videos_screen.dart';
 
 class WhatsAppHome extends StatefulWidget {
+  final List<CameraDescription> cameras;
+  WhatsAppHome({this.cameras});
+
   @override
   _WhatsAppHomeState createState() => _WhatsAppHomeState();
 }
@@ -49,7 +53,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
       body: new TabBarView(
         controller: _tabController,
         children: <Widget>[
-          new CameraScreen(),
+          new CameraScreen(widget.cameras),
           new ChatScreen(),
           new VideosScreen(),
           new ForosScreen(),
