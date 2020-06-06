@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappclone/pages/camera_screen.dart';
+import 'package:whatsappclone/pages/chat_screen.dart';
+import 'package:whatsappclone/pages/foro_screen.dart';
+import 'package:whatsappclone/pages/videos_screen.dart';
 
 class WhatsAppHome extends StatefulWidget {
   @override
@@ -36,6 +40,23 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
             ),
           ],
         ),
+      ),
+      body: new TabBarView(
+        controller: _tabController,
+        children: <Widget>[
+          new CameraScreen(),
+          new ChatScreen(),
+          new VideosScreen(),
+          new ForosScreen(),
+        ],
+      ),
+      floatingActionButton: new FloatingActionButton(
+        backgroundColor: Theme.of(context).accentColor,
+        child: new Icon(
+          Icons.message,
+          color: Colors.white,
+        ),
+        onPressed: () => print("open chats"),
       ),
     );
   }
