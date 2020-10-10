@@ -26,7 +26,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("WhatsApp"),
+        title: new Text("Whatsapp Clone"),
         elevation: 0.7,
         bottom: new TabBar(
           controller: _tabController,
@@ -65,7 +65,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
           Icons.message,
           color: Colors.white,
         ),
-        onPressed: () => print("open chats"),
+        onPressed: () => print("abrir chats"),
       ),
     );
   }

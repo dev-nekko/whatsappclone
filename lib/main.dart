@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: "WhatsApp",
       theme: new ThemeData(
-        primaryColor: new Color(0xFFD1F4E6),
-        accentColor: new Color(0xFF5DE1E6),
+        primaryColor: new Color(0xFF5DE1E6),
+        accentColor: new Color(0xFFD1F4E6),
       ),
       debugShowCheckedModeBanner: false,
       home: new WhatsAppHome(cameras: cameras),
