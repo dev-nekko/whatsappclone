@@ -55,8 +55,8 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
         children: <Widget>[
           new CameraScreen(widget.cameras),
           new ChatScreen(),
-          new VideosScreen(),
           new ForosScreen(),
+          new VideosScreen(),
         ],
       ),
       floatingActionButton: new FloatingActionButton(
