@@ -40,7 +40,7 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
               text: "VIDEOS",
             ),
             new Tab(
-              text: "FOROS",
+              text: "EXTRAS",
             ),
           ],
         ),
