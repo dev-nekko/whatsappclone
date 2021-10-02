@@ -1,3 +1,5 @@
+// Para poder utilizar la camara del celular
+
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
 
